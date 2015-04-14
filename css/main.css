@@ -1,0 +1,131 @@
+/* {
+	border: 1px solid black !important;
+	-webkit-box-sizing:  border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing:  border-box;
+	box-sizing: border-box;
+}*/
+* {
+
+	font-family: Arial; Sans-serif; Helvetica;
+	text-align: center;
+
+}
+
+
+@media only screen and (max-width: 400px) {
+	p {
+		background-color: blue;
+	}
+}
+
+
+h1.toprow {
+	
+	/*padding:  120px 20px 120px 20px;*/
+	margin: 120px 240px 120px 240px;
+	color: #FFFFFF;
+	border: 1px solid white;
+
+
+}   
+
+
+p {
+	font-size:  10pt;
+}
+
+.row {
+	width:  100%;
+	display: flex;
+	flex-wrap:  wrap;
+}
+
+
+
+.col-1 {
+	width:  8.33%;
+}
+
+.col-2 {
+	width:  16.66%;
+
+}
+
+.col-3 {
+	width: 25%;
+	background-color:  white;
+}
+
+.body-col-3 {
+	width: 25%;
+	background-color: #E8E8E7;
+}
+
+.col-4 {
+	width:  33.33%;
+}
+
+.col-5 {
+	width:  41.66%;
+}
+
+.col-6 {
+	width:  50%;
+}
+
+.col-7 {
+	width:  58.33%;
+}
+
+.col-8 {
+	width:  66.66%;
+}
+
+.col-9 {
+	width:  75%;
+	
+	/*background-image: url("http://placekitten.com/g/800/900");*/
+	background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");
+	background-size: 800px 900px;
+	background-color: #E8E8E7;
+
+}
+
+.body-col-9 {
+	width: 75%;
+	background-color: #3300FF;
+	color: #3300FF;
+
+}
+
+
+
+
+.col-10 {
+	width:  83.33%;
+}
+
+.col-11 {
+	width:  91.66%;
+}
+
+.col-12 {
+	width:  100%;
+}
+
+.col-12-color {
+	width: 100%;
+	background-color: green();
+}
+
+p {
+	background-color: white;
+}
+
+p.body {
+	background-color: #3300FF;
+	color: #3300FF;
+	font-size:  4pt;
+}
+

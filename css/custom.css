@@ -1,0 +1,49 @@
+body {
+	background-image: url("images/wallpaper1.jpg");
+	color: #FFFFFF;
+	background-color: blue;
+}
+
+nav {
+	background-color: #FFFFFF;
+	width:  100%;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	border:  4px solid black;
+	border-radius:  2px;
+
+}
+
+p#nav { margin-bottom: 0px;}
+
+
+h2, p {
+	text-align: left;
+	margin-left:  2px;
+}
+
+img {
+	align: right;
+	max-width: 400px;
+	max-height:  200px;
+	border:  2px solid black;
+}
+
+footer {
+	font-size: 9pt;
+	font-style: italic;
+	margin-top: 80px;
+}
+
+.footer a {
+	color: #990033;
+	font-weight: bold;
+}
+
+.footer a:active {
+	color: #FFFFFF;
+}
+
+.footer a:visited {
+	color: #FF33FF;
+}
