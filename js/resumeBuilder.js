@@ -171,7 +171,8 @@ var projects = {
 		{
 			"title" : "Mechanical Pipe Crawler",
 			"date" : "March 2011",
-			"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
+			"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the 
+			San Bruno oil pipeline explosion.",
 			"images" : []
 
 		}
