@@ -167,6 +167,13 @@ var projects = {
 			"date" : "March 2015", 
 			"description" : "This resume is intended to showcase a multitude of front-end development skills.  The features of this page will accrue as I progress.",
 			"images" : [ "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png", "http://placehold.it/135x135" ]
+		},
+		{
+			"title" : "Mechanical Pipe Crawler",
+			"date" : "March 2011",
+			"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
+			"images" : []
+
 		}
 	]
 };
