@@ -174,6 +174,13 @@ var projects = {
 			"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
 			"images" : []
 
+		},
+		{
+			"title" : "Arcade Game (Frogger Model)",
+			"date" : "May 2015",
+			"description": "This was a web development progressed that combined HTML and Javascript to create a game modeled off of the classic arcade game 'Frogger'",
+			"images" : []
+
 		}
 	]
 };
