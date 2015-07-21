@@ -78,6 +78,40 @@ var model = {
 			"responsibilities" : "Coordinating month-by-month payment of cable contracts, following up with collections from cable clients, corresponded with cable service providers."
 			}
 		],
+	},
+	projects:  {
+		"projects" : [ 		
+			{
+				"title" : "Online Resume",
+				"date" : "March 2015", 
+				"description" : "This resume is intended to showcase a multitude of front-end development skills.  The features of this page will accrue as I progress.",
+				"images" : [ "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png", "http://placehold.it/135x135" ]
+			},
+			{
+				"title" : "Arcade Game (Frogger Model)",
+				"date" : "May 2015",
+				"description": "This was a web development progressed that combined HTML and Javascript to create a game modeled off of the classic arcade game 'Frogger'",
+				"images" : []
+			},
+			{ 
+				"title" : "Longboard Brake",
+				"date" : "June 2011",
+				"description" : "The longboard brake was an experimental, spring-suspended module that used rubber stoppers (erasers) as brake pads.  The prototype was a smashing success!",
+				"images" :  ["images/longboard.jpg", "images/longboard2.jpg"]	
+			},
+			{
+				"title" : "Mechanical Pipe Crawler",
+				"date" : "March 2011",
+				"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
+				"images" : []
+			},
+			{
+				"title" : "Scotch Thermal Laminator Anti-Jamming Device",
+				"date" : "June 2011",
+				"description": "Worked with a team of 4 under the direction of Scotch to design and implement an infrared sensor wired to a reversible gear.  Included mechanical design and assembly, among other duties.",  
+				"images" : []
+			}
+		]
 	}
 };
 //  Stores render functions for profile data
@@ -162,6 +196,25 @@ var view = {
 			var formattedDescription = HTMLworkDescription.replace("%data%", workObject.jobs[i].responsibilities);
 			$(".work-entry:last").append(formattedDescription);
 		};
+	},
+	renderProjects:  function(projectObject) {
+		for (project in projectObject.projects) {
+			$("#projects").append(HTMLprojectStart);
+
+			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projectObject.projects[project].title);	
+			$(".project-entry:last").append(formattedProjectTitle);
+			
+			var formattedProjectDate = HTMLprojectDates.replace("%data%", projectObject.projects[project].date);	
+			$(".project-entry:last").append(formattedProjectDate);
+			
+			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projectObject.projects[project].description);	
+			$(".project-entry:last").append(formattedProjectDescription);
+			//iterates through the images array for each project in the projects array
+			for (image in projectObject.projects[project].images) {
+				var formattedProjectImage = HTMLprojectImage.replace("%data%", projectObject.projects[project].images[image]);	
+				$(".project-entry:last").append(formattedProjectImage);
+			};
+		};
 	}
 };
 //  Calls render functions 
@@ -171,70 +224,15 @@ var controller = {
 		view.renderBio(model.bio);
 		view.renderEducation(model.education);
 		view.renderWork(model.work);
-		
+		view.renderProjects(model.projects);
 	}
-
 };
 
 
 controller.init();
 
 
-var projects = {
-	"projects" : [ 		
-		{
-			"title" : "Online Resume",
-			"date" : "March 2015", 
-			"description" : "This resume is intended to showcase a multitude of front-end development skills.  The features of this page will accrue as I progress.",
-			"images" : [ "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png", "http://placehold.it/135x135" ]
-		},
-		{
-			"title" : "Arcade Game (Frogger Model)",
-			"date" : "May 2015",
-			"description": "This was a web development progressed that combined HTML and Javascript to create a game modeled off of the classic arcade game 'Frogger'",
-			"images" : []
-		},
-		{ 
-			"title" : "Longboard Brake",
-			"date" : "June 2011",
-			"description" : "The longboard brake was an experimental, spring-suspended module that used rubber stoppers (erasers) as brake pads.  The prototype was a smashing success!",
-			"images" :  ["images/longboard.jpg", "images/longboard2.jpg"]	
-		},
-		{
-			"title" : "Mechanical Pipe Crawler",
-			"date" : "March 2011",
-			"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
-			"images" : []
-		},
-		{
-			"title" : "Scotch Thermal Laminator Anti-Jamming Device",
-			"date" : "June 2011",
-			"description": "Worked with a team of 4 under the direction of Scotch to design and implement an infrared sensor wired to a reversible gear.  Included mechanical design and assembly, among other duties.",  
-			"images" : []
-		}
-	
-	]
-};
-projects.display = function() {
-	for (project in projects.projects) {
-		$("#projects").append(HTMLprojectStart);
 
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);	
-		$(".project-entry:last").append(formattedProjectTitle);
-		
-		var formattedProjectDate = HTMLprojectDates.replace("%data%", projects.projects[project].date);	
-		$(".project-entry:last").append(formattedProjectDate);
-		
-		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);	
-		$(".project-entry:last").append(formattedProjectDescription);
-		//iterates through the images array for each project in the projects array
-		for (image in projects.projects[project].images) {
-			var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);	
-			$(".project-entry:last").append(formattedProjectImage);
-		};
-	};
-};
-projects.display();
 $(document).click(function(loc) { 
 	var x = event.pageX;
 	var y = event.pageY;
