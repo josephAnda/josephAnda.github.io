@@ -227,8 +227,6 @@ var controller = {
 		view.renderProjects(model.projects);
 	}
 };
-
-
 controller.init();
 
 
