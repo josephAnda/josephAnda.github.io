@@ -129,7 +129,7 @@ function initializeMap() {
     // adds the single location property from bio to the locations array
     //locations.push(bio.contacts.location);
     // adding a modified version of the code above to work with my data structure
-    locations.push(contactInfo.location);
+    locations.push(model.contactInfo.location);
 
     // iterates through school locations and appends each location to
     // the locations array
@@ -139,8 +139,8 @@ function initializeMap() {
 
     // iterates through work locations and appends each location to
     // the locations array
-    for (var job in work.jobs) {
-      locations.push(work.jobs[job].location);
+    for (var job in model.work.jobs) {
+      locations.push(model.work.jobs[job].location);
     }
 
     return locations;
