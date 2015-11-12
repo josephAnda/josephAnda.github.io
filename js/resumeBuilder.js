@@ -1,6 +1,6 @@
 
 //Version 3.0.  Implemented the MVC Paradigm
-"use strict";
+//"use strict";
 //  Stores resume data for display
 var model = {
 	contactInfo: { 	 
@@ -117,13 +117,13 @@ var model = {
 //  Stores render functions for profile data
 var view = {
 	renderContacts: function(contactObject) {
-		formattedContactLocation = HTMLlocation.replace("%data%", contactObject.location);
+		var formattedContactLocation = HTMLlocation.replace("%data%", contactObject.location);
 		$("#footerContacts").append(formattedContactLocation);
-		formattedContactEmail = HTMLemail.replace("%data%", contactObject.email);
+		var formattedContactEmail = HTMLemail.replace("%data%", contactObject.email);
 		$("#footerContacts").append(formattedContactEmail);
-		formattedContactMobile = HTMLmobile.replace("%data%", contactObject.mobile);
+		var formattedContactMobile = HTMLmobile.replace("%data%", contactObject.mobile);
 		$("#footerContacts").append(formattedContactMobile);
-		formattedContactGithub = HTMLgithub.replace("%data%", contactObject.github);
+		var formattedContactGithub = HTMLgithub.replace("%data%", contactObject.github);
 		$("#footerContacts").append(formattedContactGithub);
 	},
 	renderBio: function(bioObject) {
