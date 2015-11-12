@@ -1,7 +1,6 @@
 
-//Version 2.0.  Everything is encapsulated!
-
-//"use strict";
+//Version 3.0.  Implemented the MVC Paradigm
+"use strict";
 //  Stores resume data for display
 var model = {
 	contactInfo: { 	 
@@ -37,7 +36,8 @@ var model = {
 		"onlineClasses" : [ {
 		"school" : "Udacity",
 		"title" : "Front-End Developer",
-		"dates" : "April 2015 - September 2015",
+		"degree" : "Nanodegree",
+		"dates" : "April 2015 - November 2015",
 		"url" : "http://www.udacity.com"
 		} ] 
 	},
