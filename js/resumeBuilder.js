@@ -82,10 +82,10 @@ var model = {
 	projects:  {
 		"projects" : [ 		
 			{
-				"title" : "Online Resume",
-				"date" : "March 2015", 
-				"description" : "This resume is intended to showcase a multitude of front-end development skills.  The features of this page will accrue as I progress.",
-				"images" : [ "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png", "http://placehold.it/135x135" ]
+				"title" : "Neighborhood Mapper",
+				"date" : "October 2015", 
+				"description" : "This is a multi-faceted project that incorporates various APIs, including Google Maps, to emulate a single-page venue-finding web application.",
+				"images" : [  ]
 			},
 			{
 				"title" : "Arcade Game (Frogger Model)",
@@ -127,9 +127,9 @@ var view = {
 		$("#footerContacts").append(formattedContactGithub);
 	},
 	renderBio: function(bioObject) {
-		formattedRole = HTMLheaderRole.replace("%data%", bioObject.role);
+		var formattedRole = HTMLheaderRole.replace("%data%", bioObject.role);
 		$("#header").prepend(formattedRole);
-		formattedName = HTMLheaderName.replace("%data%", bioObject.name);
+		var formattedName = HTMLheaderName.replace("%data%", bioObject.name);
 		$("#header").prepend(formattedName);
 		//adds an image to the profile
 		var img = document.createElement("img");
