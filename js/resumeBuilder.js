@@ -2,6 +2,15 @@
 //Version 3.0.  Implemented the MVC Paradigm
 //"use strict";
 //  Stores resume data for display
+/* 
+TODO:
+[  ]  Determine how much of this design is 'salvagable' for the new portfolio
+[  ]  Create a basic template/concept design for your portfolio
+[  ]  Determine what pictures/projects you'll want to include
+[  ]  Acquire access to fancy buttons and design shortcuts
+[  ](?)  Learn how to animate slide-in menus.  
+[  ]  Solidify your concept design for this music production/DJ webpage (for self-promotion)
+*/
 var model = {
 	contactInfo: { 	 
 		"location" : "San Mateo, CA",
@@ -13,8 +22,8 @@ var model = {
 		"name" : "Joseph Anda",
 		"role" : "Front End Developer",
 		"skills" : ["Javascript", "Ruby", "C++", "HTML/CSS", "Mechanical Design", "Machine Shop", "Teaching" ],
-		"url" : "http://andadps.com",
-		"welcome" : "Welcome to my bio!"
+		"url" : "http://josephAnda.github.io",
+		"welcome" : "Welcome to my portfolio!"
 		//"contactInfo" : model.contactInfo
 	},
 	education: { 
@@ -85,31 +94,36 @@ var model = {
 				"title" : "Neighborhood Mapper",
 				"date" : "October 2015", 
 				"description" : "This is a multi-faceted project that incorporates various APIs, including Google Maps, to emulate a single-page venue-finding web application.",
-				"images" : [  ]
+				"images" : [],
+				"url" : ""
 			},
 			{
 				"title" : "Arcade Game (Frogger Model)",
 				"date" : "May 2015",
 				"description": "This was a web development progressed that combined HTML and Javascript to create a game modeled off of the classic arcade game 'Frogger'",
-				"images" : []
+				"images" : [],
+				"url" : ""
 			},
 			{ 
 				"title" : "Longboard Brake",
 				"date" : "June 2011",
 				"description" : "The longboard brake was an experimental, spring-suspended module that used rubber stoppers (erasers) as brake pads.  The prototype was a smashing success!",
-				"images" :  ["images/longboard.jpg", "images/longboard2.jpg"]	
+				"images" :  ["images/longboard.jpg", "images/longboard2.jpg"],
+				"url" : ""
 			},
 			{
 				"title" : "Mechanical Pipe Crawler",
 				"date" : "March 2011",
 				"description": "This was an experimental crawler inspired by the need for agile pipe inspection methods evidenced by the San Bruno oil pipeline explosion.",
-				"images" : []
+				"images" : [],
+				"url" : ""
 			},
 			{
 				"title" : "Scotch Thermal Laminator Anti-Jamming Device",
 				"date" : "June 2011",
 				"description": "Worked with a team of 4 under the direction of Scotch to design and implement an infrared sensor wired to a reversible gear.  Included mechanical design and assembly, among other duties.",  
-				"images" : []
+				"images" : [],
+				"url" : ""
 			}
 		]
 	}

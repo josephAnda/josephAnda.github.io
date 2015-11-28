@@ -1,1 +1,1 @@
-##  This project is intended to create an online portfolio using HTML, CSS, and Javascript
+##  This portfolio incorporates the MVC paradigm and showcases some of my most recent work 
